@@ -11,8 +11,7 @@ Containerization: Docker
 Orchestration: Kubernetes
 Local Development: Docker Compose
 Project Structure
-bash
-Copiar código
+
 .
 ├── client/                 # React web client code
 ├── api/                    # Golang backend code
@@ -21,40 +20,28 @@ Copiar código
 ├── docker-compose.yml      # Docker Compose configuration for local development
 ├── Dockerfile              # Dockerfile to create the client image
 ├── README.md               # This file
-Setup and Deployment
+
+# Setup and Deployment
+
 Prerequisites
 Docker
 Docker Compose
 Kubernetes (Minikube for local development or a Kubernetes cluster)
-Initial Setup
-Clone the repository
 
-bash
-Copiar código
-git clone https://github.com/your-username/ecommerce-project.git
-cd ecommerce-project
-Build Docker images
 
-bash
-Copiar código
-docker-compose build
-Start services with Docker Compose (for local development)
-
-bash
-Copiar código
-docker-compose up
+##Initial Setup
 Deploy on Kubernetes
 
-Start Minikube (if used for local development)
+##Start Minikube (if used for local development)
 
-bash
-Copiar código
 minikube start
 Apply Kubernetes configurations
 
-bash
-Copiar código
-kubectl apply -f k8s/
+
+##Build Docker images
+docker-compose up
+Start services with Docker Compose (for local development)
+
 Using the Application
 Access the Web Client
 
